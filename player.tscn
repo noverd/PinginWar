@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://KinematicBody2D.gd" type="Script" id=1]
+[ext_resource path="res://res/pingrun.png" type="Texture" id=2]
+
+[node name="player" type="KinematicBody2D"]
+script = ExtResource( 1 )
+GRAVITY = 50
+
+[node name="pingrun" type="Sprite" parent="."]
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 2 )
+
+[node name="Polygon" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -11.0298, -30.2728, -11.0298, -35.5526, -0.0572376, -35.5821, 0.00175476, -30.2138, 16.2836, -30.2138, 16.3426, -24.6096, 21.8906, -24.6406, 21.8696, -8.19096, 32.7856, -8.19096, 32.7856, 2.68081, 21.958, 2.725, 21.9112, 24.5226, 11.0017, 24.5694, 10.9912, 35.4754, 0.0452795, 35.5726, -0.00154209, 24.6162, -10.9111, 24.6631, -10.9111, 35.479, -21.9362, 35.5496, -21.9011, 24.6056, -32.8451, 24.7108, -32.825, -24.6417, -27.4872, -24.6417, -27.3936, -30.2603 )
